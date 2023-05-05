@@ -40,7 +40,10 @@ public class UsuarioRepository {
                 Usuario usuario = new Usuario();
                 usuario.setCodigo(resultSet.getInt("codigo"));
                 usuario.setNome(resultSet.getString("nome"));
-                usuario.setNome(resultSet.getString("cpf"));
+                usuario.setCpf(resultSet.getString("cpf"));
+                usuario.setEmail(resultSet.getString("email"));
+                usuario.setSenha(resultSet.getString("senha"));
+
                 usuarioList.add(usuario);
             }
             return usuarioList;

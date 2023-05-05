@@ -3,10 +3,6 @@ package resources;
 import Entities.Instrutor;
 import jakarta.jws.WebService;
 import repositories.InstrutorRepository;
-import javax.ws.rs.OPTIONS;
-import javax.ws.rs.core.Response;
-import javax.ws.rs.core.Response.ResponseBuilder;
-import javax.ws.rs.core.Response.Status;
 import java.util.List;
 
 @WebService(endpointInterface = "resources.IInstrutor")
